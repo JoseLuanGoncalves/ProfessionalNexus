@@ -77,3 +77,8 @@ body {
 .choice-list li:hover {
     transform: scale(1.10);
 }
+
+#registro-form label, #registro-form input,
+#registro-form button{
+    color: black;
+}
