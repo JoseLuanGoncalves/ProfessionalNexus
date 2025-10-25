@@ -1,0 +1,79 @@
+* {
+    font-family: monospace;
+    color: white;
+}
+
+body {
+    background-image: url(/Images/Background.jpg);
+    background-size: cover;
+    padding: 20px;
+}
+
+.progression{
+    padding: 5px;
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.current-room {
+    display: flex;
+}
+
+.progression-bar {
+    width: 100%;
+    padding: 10px;
+}
+
+.progression-bar progress {
+
+    width: 100%;
+    height: 10px;
+}
+
+.quest-card {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 50%;
+    align-items: center;
+}
+
+.card-title {
+    background: radial-gradient(circle at center, #FF8C00 0%, #FF4500 100%);
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.quest-description {
+    width: 70%;
+    height: 30%;
+    background-color: rgba(44, 43, 58, 0.85);
+    padding: 15px;
+    border-radius: 10%;
+    border: solid, rgba(0, 0, 0, 0.85) ;
+    margin: 30px;
+}
+
+.choice-list {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.choice-list li{
+    background-color: rgba(44, 43, 58, 0.85);
+    border: solid, rgba(0, 0, 0, 0.85) ;
+    padding: 15px;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.choice-list li:hover {
+    transform: scale(1.10);
+}
